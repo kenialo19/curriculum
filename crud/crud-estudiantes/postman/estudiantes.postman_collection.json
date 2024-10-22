@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "fbf58fc8-7720-4a6e-8026-d871b0d3b223",
+		"name": "estudiantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20241313"
+	},
+	"item": [
+		{
+			"name": "estudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/estudiantes"
+			},
+			"response": []
+		},
+		{
+			"name": "estudiantes-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/estudiantes/4"
+			},
+			"response": []
+		},
+		{
+			"name": "estudiantes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Laura Martínez\",\r\n    \"especialidad\": \"Ingeniería Civil\",\r\n    \"grado\": \"1er Año\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/estudiantes"
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Laura Martínez\",\r\n    \"especialidad\": \"Ingeniería Civil\",\r\n    \"grado\": \"1er Año\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/estudiantes"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 04:16:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"eid\": 5,\n    \"nombre\": \"Laura Martínez\",\n    \"especialidad\": \"Ingeniería Civil\",\n    \"grado\": \"1er Año\"\n}"
+				}
+			]
+		},
+		{
+			"name": "estudiantes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Laura Martínez Cataño\",\r\n    \"especialidad\": \"Ingeniería Civil\",\r\n    \"grado\": \"1er Año\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/estudiantes/5"
+			},
+			"response": [
+				{
+					"name": "estudiantes",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Laura Martínez Cataño\",\r\n    \"especialidad\": \"Ingeniería Civil\",\r\n    \"grado\": \"1er Año\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/estudiantes/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 04:17:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"eid\": 5,\n    \"nombre\": \"Laura Martínez Cataño\",\n    \"especialidad\": \"Ingeniería Civil\",\n    \"grado\": \"1er Año\"\n}"
+				}
+			]
+		},
+		{
+			"name": "estudiantes Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/estudiantes/5"
+			},
+			"response": [
+				{
+					"name": "estudiantes",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Laura Martínez Cataño\",\r\n    \"especialidad\": \"Ingeniería Civil\",\r\n    \"grado\": \"1er Año\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/estudiantes/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 04:17:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"eid\": 5,\n    \"nombre\": \"Laura Martínez Cataño\",\n    \"especialidad\": \"Ingeniería Civil\",\n    \"grado\": \"1er Año\"\n}"
+				},
+				{
+					"name": "estudiantes Copy",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/estudiantes/5"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Oct 2024 04:19:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Estudiante eliminado exitosamente."
+				}
+			]
+		}
+	]
+}

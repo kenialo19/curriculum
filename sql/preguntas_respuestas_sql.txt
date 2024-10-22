@@ -1,0 +1,33 @@
+1. Explique brevemente para que sirve una vista. (2 Puntos)
+   Es el resultado de una consulta SELECT.
+
+2. Cuál es el objetivo de un JOB? (2 Puntos)
+   Automatizar tareas rutinarias en la base de datos.
+
+3. Explique cuál es la característica y en qué se diferencia: TRUNCATE, DELETE, DROP (2 Puntos)
+   TRUNCATE: su función es eliminar todos los registros o elementos de una tabla.
+   DELETE: Elimina registros o elementos basándose en una condición dada.
+   DROP: Elimina una tabla o cualquier objeto de la base de datos y todos los registros.
+
+   La diferencia entre estas sentencias SQL son las siguientes: 
+   TRUNCATE solo borra los elementos de la tabla y no genera logs que permiten revertir la operación realizada. 
+   DELETE solo borra elementos de la tabla y genera logs que permiten revertir la operación. 
+   DROP borra la tabla y los elementos y la operación es irreversible.
+
+4. Si se tiene una lista de números desordenada { 8,1,7,2,0,3,6,4,5,9} y se desea obtener como único resultado el dato con mayor valor, ¿Cuál de las funciones de SQL se debe utilizar? (2 Puntos)
+   Se puede utilizar la función MAX() que devuelve el valor máximo de un conjunto de valores.
+
+5. Para qué se utiliza la cláusula Having (2 Puntos)
+   Se utiliza junto con GROUP BY para filtrar grupos de datos junto con condiciones aplicadas con funciones de agregación, pero se puede utilizar sin GROUP BY para consultas que no agrupan datos.
+
+6. De la tabla PRUEBAESTUDIANTE se desea saber el nombre de las especialidades registradas y la cantidad de veces que existe en la tabla. (5 Puntos)
+   Consulta SQL:
+   SELECT especialidad, COUNT(*) AS cantidad
+   FROM PRUEBAESTUDIANTE
+   GROUP BY especialidad;
+
+7. Se requiere consultar cuáles son las inscripciones que tienen horario M-F9. (5 Puntos)
+   Consulta SQL:
+   SELECT *
+   FROM PRUEBAESTUDIANTE
+   WHERE horario = 'M-F9';
